@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+
+/* Navbarrrr section */
+
+nav{
+    background:rgba(17, 17, 17, 0.653) ;
+    height: 100vh;
+    width: 100%;
+   z-index: 2;
+
+    
+}
+
+
+.navbar .element
+{
+    height: 10vh;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navbar .element .logo img{
+   width: 50px;
+   height: 50px;
+   border-radius: 50%;
+}
+
+.navbar .element .urls a {
+text-decoration: none;
+color: #fff;
+padding: 0 10px;
+transition: .3s ease-in-out;
+font-weight: 300;
+text-transform: uppercase;
+font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.navbar .element .urls a:hover{
+    color: rgba(0, 228, 34, 0.904);
+    
+}
+/* End navbar */
+section{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background:#111 ;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+section .row{
+    position: relative;
+    top: -60%;
+    width: 100%;
+    display: flex;
+    padding: 10px 0;
+    white-space: nowrap;
+    font-size: 58px;
+    transform: rotate(-30deg);
+}
+i{
+    color: rgba(0, 0, 0, 0.5);
+    transition: 1s;
+    padding: 0 5px;
+    user-select: none;
+    cursor: default;
+
+}
+i:hover
+{
+transition: 0s;
+color: #0f0;
+text-shadow: 0 0 120px #0f0;
+}
+section .row div{
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate1 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row div:nth-child(2){
+    animation: animate2 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate1
+{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
+@keyframes animate2
+{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(-200%);
+    }
+}
+
+
+
+
+section .row:nth-child(even) div{
+    font-size: 1em;
+    white-space: nowrap;
+    animation: animate3 80s linear infinite;
+    animation-delay: -80s;
+}
+section .row:nth-child(even)  div:nth-child(2){
+    animation: animate4 80s linear infinite;
+    animation-delay: -40s;
+}
+
+@keyframes animate3
+{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
+@keyframes animate4
+{
+    0%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+content
+{
+    top: 70%;
+   
+}
+content .details
+{
+
+background: linear-gradient(to right, #292E49, #536976, #BBD2C5); 
+
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:50px;
+    box-sizing: border-box;
+}
+.circle
+{
+  
+    width: 290px;
+    height: 290px;
+    border-radius:50%;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    object-fit: contain;
+    transition: 0.6s ease-in-out;
+}
+.circle img
+{
+    width: 290px;
+    
+   
+}
+.details .right
+{
+padding: 40px;
+font-family: 'Courgette', cursive;
+letter-spacing: 1px;
+
+}
+.details .right .contacts
+{
+    
+    font-size: 25px;
+    display: flex;
+}
+.details .right .contacts p
+{
+    padding: 10px;
+}
+.details .right .contacts a {
+text-decoration: none;
+}
+.circle:hover
+{
+ 
+    border-radius: 4%;
+    height: 400px;
+}
+
+.btn
+{
+    border-radius: 25px;
+    border: 2px solid rgb(221, 163, 2);
+    height: 40px;
+    width: 90px;
+    text-align: center;
+    padding-top:8px;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin: 20px ;
+    transition: .4s ease-in-out;
+    color: rgb(0, 0, 0);
+    font-weight :bolder;
+}
+.btn:hover
+{
+    background:rgb(216, 159, 3) ;
+}
+.projects
+{
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+.projects h1{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.project_details .row1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:20px 0px;
+}
+.card
+{
+    
+    width: 300px;
+    height: 400px;
+    border-radius: 2%;
+overflow: hidden;
+margin: 20px ;
+box-shadow: 0px 0px 20px 5px rgba(0, 0, 255, .2);
+
+}
+.pr1 .image
+{
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+.pr1 .image img
+{
+width: 300px;
+transition: .7s ease-in-out;
+}
+.pr1 .image:hover img
+{
+transform: scale(1.5);
+}
+.pr1  .pr_details
+{
+padding: 20px;
+}
+.pr1  .pr_details h2{
+    padding-bottom: 20px;
+}
