@@ -507,8 +507,10 @@ color: rgb(179, 176, 176);
 
 .My_Resume
 {
-    background:linear-gradient(rgba(0, 0, 0, 0.789),rgba(0, 0, 0, 0.891)) , url('../resources/images/wall3.jpg');
-    background-size: cover;
+    background:linear-gradient(rgba(0, 0, 0, 0.789),rgba(0, 0, 0, 0.891)) , url('../resources/images/wall3.jpg') no-repeat;
+    background-size:cover;
+   
+   
     justify-content: center;
     align-items: center;
     padding: 40px;
