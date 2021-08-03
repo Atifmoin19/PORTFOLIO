@@ -1,16 +1,20 @@
 <?php
+if(isser($_POST['sentbtn']))
+{
+    
+}
     $name = $_POST['name'];
     $visitor_email = $_POST['email'];
     $message = $_POST['message'];
 
 
-    $email_from = '1900300100051@ipec.org.in';
+    $email_from = '1900300100051@gmail.com';
 
     $email_subject = " New Feedback";
 
     $email_body = "User Name: $name.\n".
                     "User Email: $visitor_email.\n".
-                        "User Message: $message.\n";
+                    "User Message: $message.\n";
 
     $to = "atifmoin52@gmail.com";
 
@@ -20,6 +24,6 @@
 
     mail($to,$email_subject,$email_body,$headers);
 
-    header("Location: index.html");
+    header("Location:index.html?SUCCESSFULL");
 
 ?>
