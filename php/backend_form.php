@@ -1,29 +1,26 @@
 <?php
-if(isser($_POST['sentbtn']))
-{
-    echo 'SENT'
-}
-    // $name = $_POST['name'];
-    // $visitor_email = $_POST['email'];
-    // $message = $_POST['message'];
+
+    $name = $_POST['name'];
+    $visitor_email = $_POST['email'];
+    $message = $_POST['message'];
 
 
-    // $email_from = '1900300100051@gmail.com';
+    $email_from = '1900300100051@gmail.com';
 
-    // $email_subject = " New Feedback";
+    $email_subject = " New Feedback";
 
-    // $email_body = "User Name: $name.\n".
-    //                 "User Email: $visitor_email.\n".
-    //                 "User Message: $message.\n";
+    $email_body = "User Name: $name.\n".
+                    "User Email: $visitor_email.\n".
+                    "User Message: $message.\n";
 
-    // $to = "atifmoin52@gmail.com";
+    $to = "atifmoin52@gmail.com";
 
-    // $headers = "From: $email_from \r\n";
+    $headers = "From: $email_from \r\n";
 
-    // $headers = "Reply-To: $visitor_email \r\n";
+    $headers = "Reply-To: $visitor_email \r\n";
 
-    // mail($to,$email_subject,$email_body,$headers);
+    mail($to,$email_subject,$email_body,$headers);
 
-    // header("Location:index.html?SUCCESSFULL");
+    header("Location:index.html?SUCCESSFULL");
 
 ?>
